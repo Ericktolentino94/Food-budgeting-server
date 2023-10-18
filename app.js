@@ -1,11 +1,11 @@
 const express = require("express");
-const food = require("./controllers/foodController")
+const foods = require("./controllers/foodController")
 
 const app = express();
 const cors = require("cors");
 
 app.use(cors())
 app.use(express.json());
-app.use("/food", food );
+app.use("/foods", foods );
 
 module.exports = app;
